@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+    input#num_1 {
+    padding: 10px;
+    width: 50%;
+    margin: 10px;
+    border: 2px solid #ff5722;
+}
+input#num_2 {
+    padding: 10px;
+    width: 50%;
+    margin: 10px;
+    border: 2px solid #ff5722;
+}
+
+button {
+    padding: 8px 38px;
+    color: #ffffff;
+    background-color: #ffe300;
+    border: none;
+    margin: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#body {
+    text-align: center;
+    margin-top: 10%;
+    background-color: chocolate;
+
+}
+
+</style>
+<body id="body">
+    <div style="background-color: white; border: 2px solid white; border-radius: 10px; padding: 5%; margin: 10%;">
+    <input type="text" id="num_1" placeholder="Enter First value">
+    <br>
+    <input type="text" id="num_2" placeholder="Enter Second value">
+    
+    <br>
+    <button onclick="Submit()">Sum</button>
+    <button onclick="Submit_1()">Subs</button>
+    <button onclick="Submit_2()">Divi</button>
+    <button onclick="Submit_3()">Multi</button>
+</div>
+    <script>
+        function Submit(){
+           let num1 = document.getElementById("num_1").value
+           let num2 = document.getElementById("num_2").value
+           let result = Number(num1)+Number(num2)
+            document.write(result);
+            
+        }
+        function Submit_1(){
+           let num1 = document.getElementById("num_1").value
+           let num2 = document.getElementById("num_2").value
+           let result = Number(num1)-Number(num2)
+            document.write(result);
+            
+        } function Submit_2(){
+           let num1 = document.getElementById("num_1").value
+           let num2 = document.getElementById("num_2").value
+           let result = Number(num1)/Number(num2)
+            document.write(result);
+            
+        } function Submit_3(){
+           let num1 = document.getElementById("num_1").value
+           let num2 = document.getElementById("num_2").value
+           let result = Number(num1)*Number(num2)
+            document.write(result);
+            
+        }
+    </script>
+</body>
+</html>
